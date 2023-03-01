@@ -1,7 +1,7 @@
 // Descript : Node.js HTML client
 // requires : npm install expess ejs axios body-parser
 
-const expess = require('express');
+const express = require('express');
 const axios = require('axios');
 const app = express();
 var bodyPareser = require('body-parser');
@@ -12,7 +12,7 @@ const base_url = "http://localhost:3000";
 
 // set the template engine
 app.set('view engine', 'ejs');
-app.use(bodyParser.json());
+app.use(bodyPareser.json());
 app.use(bodyPareser.urlencoded({ extended: false}));
 
 // Sever static files
